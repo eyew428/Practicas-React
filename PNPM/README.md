@@ -45,7 +45,7 @@ pnpm --global config set ignore-scripts=true
 Ignorar scripts opcionales en las dependencias
 
 ```sh
-pnpm --global config set ignored-optional-dependencies=true
+ pnpm --global config set block-exotic-subdeps=true
 ```
 
 ### Comprobación
