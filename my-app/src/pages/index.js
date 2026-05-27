@@ -1,5 +1,7 @@
 import Head from "next/head";
 import Home from "./Home";
+import cowsay from "cowsay";
+import chalk from "chalk";
 
 export default function Root() {
   return (
@@ -11,7 +13,7 @@ export default function Root() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <Home />
+        console.log(cowsay.say({text: "Hello, I'm a self-aught polyglot and a aspiring programmer"}));
       </div>
     </>
   );
