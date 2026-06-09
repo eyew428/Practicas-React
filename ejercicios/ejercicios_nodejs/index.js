@@ -25,6 +25,7 @@ try {
   console.log(response.data.name);
   console.log(response.data.height);
   console.log(response.data.weight);
+
 } catch (error) {
   console.error(error);
 }
