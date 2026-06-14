@@ -25,7 +25,27 @@ try {
   console.log(response.data.name);
   console.log(response.data.height);
   console.log(response.data.weight);
-
 } catch (error) {
   console.error(error);
 }
+
+//ejercicio 5
+
+import { uniqueNamesGenerator, animals } from "unique-names-generator";
+
+const customConfig = {
+  dictionaries: [animals],
+  separator: "-",
+  length: 1,
+};
+
+const shortName1 = uniqueNamesGenerator(customConfig); // big-donkey
+console.log(chalk.blue(shortName1));
+const shortName2 = uniqueNamesGenerator(customConfig); // big-donkey
+console.log(chalk.cyan(shortName2));
+const shortName3 = uniqueNamesGenerator(customConfig); // big-donkey
+console.log(chalk.white(shortName3));
+const shortName4 = uniqueNamesGenerator(customConfig); // big-donkey
+console.log(chalk.bgBlack(shortName4));
+const shortName5 = uniqueNamesGenerator(customConfig); // big-donkey
+console.log(chalk.magenta(shortName5));
